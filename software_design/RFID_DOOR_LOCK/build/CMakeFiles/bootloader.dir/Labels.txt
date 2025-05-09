@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/CMakeFiles/bootloader
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/CMakeFiles/bootloader.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/CMakeFiles/bootloader-complete.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=01.Index.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=01.Index.SchDoc|FileName=02.BlockDiagram.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=01.Index.SchDoc|FileName=03.PowerDiagram.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=01.Index.SchDoc|FileName=04.Schematic.SchDoc|SheetNumber=4

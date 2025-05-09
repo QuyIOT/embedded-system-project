@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=D1 Old Footprint=CAP10UF New Footprint=LED3mm
+Change Component Footprint: Designator=D4 Old Footprint=CAP10UF New Footprint=LED3mm
+Change Component Designator: OldDesignator=CONTROL NewDesignator=SW2
+Change Component Designator: OldDesignator=RESET NewDesignator=SW1
+Add Pin To Net: Unknown Pin: Pin M1-39

@@ -1,0 +1,5 @@
+source "C:/esp/Espressif/frameworks/esp-idf-v4.2.3/components/app_update/Kconfig.projbuild"
+source "C:/esp/Espressif/frameworks/esp-idf-v4.2.3/components/bootloader/Kconfig.projbuild"
+source "C:/esp/Espressif/frameworks/esp-idf-v4.2.3/components/esptool_py/Kconfig.projbuild"
+source "C:/esp/Espressif/frameworks/esp-idf-v4.2.3/components/partition_table/Kconfig.projbuild"
+source "C:/BTL_Thiet_ke_He_thong_Nhung-Nhom_15-Lop_L01/software_design/RFID_DOOR_LOCK/main/Kconfig.projbuild"

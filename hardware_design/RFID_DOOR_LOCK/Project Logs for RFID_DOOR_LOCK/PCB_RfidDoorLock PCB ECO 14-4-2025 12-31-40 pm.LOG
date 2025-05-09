@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=8.4V Pin=D5-1
+Added Pin To Net: NetName=8.4V Pin=D5-2
+Add Pin To Net: Unknown Pin: Pin M1-39
+Added Pin To Net: NetName=NetD5_1 Pin=D5-1
+Added Pin To Net: NetName=NetD5_1 Pin=P1-2
+Added Net: Name=NetD5_1

@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [RFID_DOOR_LOCK.PrjPcb]
+   Generated File[PCB_RfidDoorLock-RoundHoles.TXT]
+   Generated File[PCB_RfidDoorLock-SlotHoles.TXT]
+   Generated File[PCB_RfidDoorLock.LDP]
+   Generated File[PCB_RfidDoorLock.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 1:03:58 pm On 14/4/2025

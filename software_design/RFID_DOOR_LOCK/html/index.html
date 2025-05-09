@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RFID CARD MANAGER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5; /* Light gray background */
+      color: #333; /* Dark gray text */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0B88CA; /* Dark gray header */
+      color: white;
+      padding: 20px;
+      text-align: center; /* Align content to the left */
+    }
+
+    header img {
+      max-height: 50px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin: 0;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      background-color: white; /* White table background */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    th, td {
+      border: 1px solid #ddd; /* Light gray borders */
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0F699A; /* Dark gray header */
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9; /* Light gray for even rows */
+    }
+
+    tr:hover {
+      background-color: #ddd; /* Highlight row on hover */
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #0F699A; /* Dark gray button */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0EA2DC; /* Slightly lighter gray on hover */
+    }
+
+    h2 {
+      text-align: left; /* Align titles to the left */
+      margin-left: 10%; /* Add left margin for alignment */
+      color: #000000; /* Dark gray */
+      margin-top: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #0B88CA; /* Dark gray footer */
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RFID CARD MANAGER</h1>
+  </header>
+
+  <h2>Register cards</h2>
+  <table id="registeredTable">
+    <thead>
+      <tr><th>STT</th><th>UID</th><th>Action</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Unregister cards</h2>
+  <table id="unregisteredTable">
+    <thead>
+      <tr><th>STT</th><th>UID</th><th>Action</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <footer>
+    &copy; 2025 RFID CARD MANAGER. All rights reserved.
+  </footer>
+
+  <script>
+    // ...existing JavaScript code...
+    function loadTables() {
+      fetch('/register')
+        .then(res => res.json())
+        .then(data => {
+          const tbody = document.querySelector('#registeredTable tbody');
+          tbody.innerHTML = '';
+          data.forEach((uid, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${index + 1}</td>
+              <td>${uid}</td>
+              <td><button onclick="unregister('${uid}')">Unregister</button></td>`;
+            tbody.appendChild(row);
+          });
+        });
+
+      fetch('/unregister')
+        .then(res => res.json())
+        .then(data => {
+          const tbody = document.querySelector('#unregisteredTable tbody');
+          tbody.innerHTML = '';
+          data.forEach((uid, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${index + 1}</td>
+              <td>${uid}</td>
+              <td><button onclick="register('${uid}')">Register</button></td>`;
+            tbody.appendChild(row);
+          });
+        });
+    }
+
+    function register(uid) {
+      fetch('/registerUID', {
+        method: 'POST',
+        body: uid,
+      }).then(() => loadTables());
+    }
+
+    function unregister(uid) {
+      fetch('/unregisterUID', {
+        method: 'POST',
+        body: uid,
+      }).then(() => loadTables());
+    }
+
+    setInterval(loadTables, 2000); // Refresh tables every 2 seconds
+    loadTables(); // Initial load
+  </script>
+</body>
+</html>
